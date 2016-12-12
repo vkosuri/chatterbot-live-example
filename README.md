@@ -18,9 +18,9 @@ https://github.com/gunthercox/ChatterBot/tree/master/chatterbot/corpus/data
 
 Logic Adapters
 --------------
-``` Pythoin
+``` Python
 CHATTERBOT = {
-    'name': 'Tech Support Bot',
+    'name': 'Chatterbot Live Example',
     'logic_adapters': [
         'chatterbot.logic.MathematicalEvaluation',
         'chatterbot.logic.TimeLogicAdapter',
