@@ -1,0 +1,24 @@
+{
+  "name": "chatterbot-live-example",
+  "description": "A live example for chatterbot",
+  "scripts": {
+  },
+  "env": {
+    "DEBUG_COLLECTSTATIC": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
