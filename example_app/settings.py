@@ -36,7 +36,7 @@ CHATTERBOT = {
     'name': 'Django ChatterBot Example',
     'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
     'training_data': [
-        'chatterbot.corpus.english'
+        'chatterbot.corpus'
     ]
 }
 
