@@ -15,13 +15,11 @@ env:
   - DJANGO_VERSION=1.10
 
 install:
-  - pip install .
-  - pip install -r test-requirements.txt
   - pip install -r requirements.txt
   - pip install -q Django==$DJANGO_VERSION
 
 script:
-  - python tests
+  - python manage.py test example_app/
   - nosetests --with-coverage --cover-package=chatterbot
 
 after_success:
