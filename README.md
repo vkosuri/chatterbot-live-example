@@ -5,24 +5,27 @@ app using [Django](https://ww.djangoproject.com) and [ChatterBot](https://github
 
 ## Documentation
 
-Start the Django app by running ``python manage.py runserver 0.0.0.0:8000``
+Start the Django app by running 
 
-Further documentation on getting set up with Django and ChatterBot can be
-found in the [ChatterBot documentation](http://chatterbiot.readthedocs.io/en/latest/django.html)
+``` Bash
+python manage.py runserver 0.0.0.0:8000
+```
+
+Further documentation on getting set up with Django and ChatterBot can be found in the [ChatterBot documentation](http://chatterbiot.readthedocs.io/en/latest/django.html)
 
 ## Make migrations
 
 ``` Bash
 python manage.py migrate
 ```
-## To train you data
+## Train your bot
 
 ``` Bash
 python manage.py train
 ```
 
 ## Training Corpus Path
-[Corpus Path](https://github.com/gunthercox/chatterbot-corpus/tree/master/chatterbot_corpus/data/english)
+The chatterbot [corpus path](https://github.com/gunthercox/chatterbot-corpus/tree/master/chatterbot_corpus/data/english) could found here.
 
 ## Bot Django Settings
 You could found Bot settings [here](./example_app/settings.py)
