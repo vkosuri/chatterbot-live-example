@@ -34,7 +34,6 @@ INSTALLED_APPS = (
 CHATTERBOT = {
     'name': 'Django ChatterBot Example',
     'logic_adapters' : [
-        "chatterbot.logic.MathematicalEvaluation",
         "chatterbot.logic.BestMatch"
     ],
     'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
