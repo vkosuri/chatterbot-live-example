@@ -1,4 +1,4 @@
 django>=1.8.0,<2.0.0
-chatterbot
+chatterbot>=0.7.6,<0.7.7
 gunicorn
 whitenoise
