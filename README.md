@@ -11,6 +11,12 @@ Start the Django app by running
 python manage.py runserver 0.0.0.0:8000
 ```
 
+If you running first time create chatterbot table before starting server
+
+``` Bash
+python manage.py migrate --run-syncdb
+```
+
 Further documentation on getting set up with Django and ChatterBot can be found in the [ChatterBot documentation](http://chatterbiot.readthedocs.io/en/latest/django.html)
 
 ## Make migrations
@@ -95,7 +101,7 @@ git push heroku master
        https://intense-falls-9163.herokuapp.com/ deployed to Heroku
 ```
 
-A more detailed information ca be found here https://devcenter.heroku.com/articles/deploying-python
+A more detailed information can be found here https://devcenter.heroku.com/articles/deploying-python
 
 ## LICENSE
 ChatterBot Django Live Example is licensed under [BSD 3-clause](./license.md)
