@@ -32,7 +32,7 @@ INSTALLED_APPS = (
 # ChatterBot settings
 
 CHATTERBOT = {
-    'name': 'Django ChatterBot Example',
+    'name': 'Heroku ChatterBot Example',
     'logic_adapters' : [
         "chatterbot.logic.BestMatch"
     ],

@@ -38,22 +38,30 @@ You could found Bot settings [here](./example_app/settings.py)
 
 ``` Python
 CHATTERBOT = {
-    'name': 'Chatterbot Live Example',
-    'logic_adapters': [
-        'chatterbot.logic.MathematicalEvaluation',
-        'chatterbot.logic.TimeLogicAdapter',
-        'chatterbot.logic.BestMatch'
+    'name': 'Heroku ChatterBot Example',
+    'logic_adapters' : [
+        "chatterbot.logic.BestMatch"
     ],
     'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
     'training_data': [
-         'chatterbot.corpus.english'
+        'chatterbot.corpus'
     ]
 }
 ```
 
+### Allowed Hosts
+Include your address at the ALLOWED_HOSTS directives in settings.py - Just the domain, make sure that you will take the protocol and slashes from the string
+
+for example
+``` Python
+ALLOWED_HOSTS = ['127.0.0.1', 'chatterbot-live-example.herokuapp.com']
+```
+
 ## Deploying on Heroku
 
-Here some of the steps lauch your Django app with Heroku
+Before deploying Heroku you should install Heroku CLI on your machine, documentation found here https://devcenter.heroku.com/articles/heroku-cli
+
+Here some of the steps launch your Django app with Heroku
 
 ### Build your app and run it locally
 
