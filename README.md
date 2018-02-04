@@ -49,6 +49,15 @@ CHATTERBOT = {
 }
 ```
 
+If your app din't responding try to shift to postgresql, you will need install the ``dj_database_url`` package, to work nicely with PostgreSQL DB on heroku.
+
+And also you will modify your settings.py as follows:
+
+``` Python
+import dj_database_url
+DATABASES={'default': dj_database_url.config()}
+```
+
 ### Allowed Hosts
 Include your address at the ALLOWED_HOSTS directives in settings.py - Just the domain, make sure that you will take the protocol and slashes from the string
 
